@@ -1,6 +1,6 @@
 {
   "name": "react-simple-chartjs",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "The Simplest React ChartJS Library",
   "main": "build/simple-chart.min.js",
   "homepage": "https://github.com/chernandez7/react-simple-chartjs#readme",
@@ -24,12 +24,13 @@
   "scripts": {
     "build": "webpack",
     "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.0.0",
-    "babel-cli": "^6.26.0",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
     "babel-eslint": "^8.2.6",
+    "babel-plugin-transform-es2015-modules-amd": "^6.24.1",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-config-prettier": "^2.9.0",
