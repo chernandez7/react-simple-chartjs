@@ -199,50 +199,41 @@ function GetChartComponent(chartType, chartData, chartOptions, options) {
   const { width, height } = options;
   switch (chartType) {
     case ChartTypes.V_BAR:
-      return (
-        <Bar
-          data={chartData}
-          options={chartOptions}
-          width={width}
-          height={height}
-        />
-      );
+      return React.createElement(Bar.default, {
+        data: chartData,
+        options: chartOptions,
+        width,
+        height
+      });
+
     case ChartTypes.H_BAR:
-      return (
-        <HorizontalBar
-          data={chartData}
-          options={chartOptions}
-          width={width}
-          height={height}
-        />
-      );
+      return React.createElement(HorizontalBar.default, {
+        data: chartData,
+        options: chartOptions,
+        width,
+        height
+      });
     case ChartTypes.LINE:
-      return (
-        <Line
-          data={chartData}
-          options={chartOptions}
-          width={width}
-          height={height}
-        />
-      );
+      return React.createElement(Line.default, {
+        data: chartData,
+        options: chartOptions,
+        width,
+        height
+      });
     case ChartTypes.AREA:
-      return (
-        <Line
-          data={chartData}
-          options={chartOptions}
-          width={width}
-          height={height}
-        />
-      );
+      return React.createElement(Line.default, {
+        data: chartData,
+        options: chartOptions,
+        width,
+        height
+      });
     default:
-      return (
-        <Bar
-          data={chartData}
-          options={chartOptions}
-          width={width}
-          height={height}
-        />
-      );
+      return React.createElement(Bar.default, {
+        data: chartData,
+        options: chartOptions,
+        width,
+        height
+      });
   }
 }
 

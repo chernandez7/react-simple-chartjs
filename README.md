@@ -2,7 +2,7 @@
 
 ## TODO
 
-- Create lib
+- Fix export issue
 - Create Generator
 - Testing
 - Support Multiple Datasets
@@ -18,6 +18,4 @@
 
 ## Props
 
-## Thanks
-
-Draftbit and Alluxo
+## Thanks to
