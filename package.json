@@ -1,6 +1,6 @@
 {
   "name": "react-simple-chartjs",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "The Simplest React ChartJS Library",
   "main": "build/simple-chart.min.js",
   "homepage": "https://github.com/chernandez7/react-simple-chartjs#readme",
