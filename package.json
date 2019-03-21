@@ -1,0 +1,24 @@
+{
+  "name": "react-simple-chartjs",
+  "version": "1.0.0",
+  "description": "The Simplest React ChartJS Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chernandez7/react-simple-chartjs.git"
+  },
+  "keywords": [
+    "react",
+    "chartjs",
+    "simple"
+  ],
+  "bugs": {
+    "url": "https://github.com/chernandez7/react-simple-chartjs/issues"
+  },
+  "homepage": "https://github.com/chernandez7/react-simple-chartjs#readme",
+  "author": "Christopher Hernandez <chris00hernandez@gmail.com>",
+  "license": "MIT"
+}
