@@ -2,10 +2,10 @@
   "name": "react-simple-chartjs",
   "version": "1.0.0",
   "description": "The Simplest React ChartJS Library",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "src/index.js",
+  "homepage": "https://github.com/chernandez7/react-simple-chartjs#readme",
+  "author": "Christopher Hernandez <chris00hernandez@gmail.com>",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chernandez7/react-simple-chartjs.git"
@@ -18,7 +18,39 @@
   "bugs": {
     "url": "https://github.com/chernandez7/react-simple-chartjs/issues"
   },
-  "homepage": "https://github.com/chernandez7/react-simple-chartjs#readme",
-  "author": "Christopher Hernandez <chris00hernandez@gmail.com>",
-  "license": "MIT"
+  "scripts": {
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.10.0",
+    "husky": "^1.1.4",
+    "lint-staged": "^8.0.5",
+    "prettier": "^1.14.2"
+  },
+  "dependencies": {
+    "chart.js": "^2.7.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-chartjs-2": "^2.7.4",
+    "react-dom": "^16.6.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
 }
