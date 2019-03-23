@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { GetChartData, GetChartOptions, GetChartComponent } from "./ChartUtils";
 
-export default class SimpleChart extends React.Component {
+class SimpleChart extends React.Component {
   render() {
     const { chartType, labels, data, title, options } = this.props;
 
@@ -24,6 +24,8 @@ export default class SimpleChart extends React.Component {
     return chart;
   }
 }
+
+export default SimpleChart;
 
 SimpleChart.propTypes = {
   chartType: PropTypes.string.isRequired,
