@@ -4,7 +4,13 @@
 
 ChartJS 2 wrapper that makes adding charts to React easy.
 
+[![Image from Gyazo](https://i.gyazo.com/4099926cb028008d814d7461b9121b94.png)](https://chrishernandez.io/chartjs/)
+
 ## Chart Generator
+
+Check out the chart generator I made for this package. Design your charts before coding!
+
+[Chart Generator](https://chrishernandez.io/chartjs/)
 
 ## Installation
 
@@ -23,19 +29,17 @@ yarn install react-simple-chartjs
 ## Example
 
 ```jsx
-import Chart from 'react-simple-chartjs';
+import Chart from "react-simple-chartjs";
 
-export default Chart = () => (
-  <Chart
-    chartType={"Vertical Bar"}
-    labels={["Jan", "Feb", "March"]}
-    data={[1,5,8]}
-    title={"Very cool chart"}
-    options={{
-      backgroundColor:{"rgba(13,119,248,0.9)"}
-    }}
-  />
-);
+<Chart
+  chartType={"Vertical Bar"}
+  labels={["Jan", "Feb", "March"]}
+  data={[1, 5, 8]}
+  title={"Very cool chart"}
+  options={{
+    backgroundColor: "rgba(13,119,248,0.9)"
+  }}
+/>;
 ```
 
 ## Props
@@ -83,11 +87,11 @@ Thanks to `react-chartjs-2` and `chart.js` contributors!
 
 ## TODO
 
-- Create Generator
+- Cleanup Code
 - Testing
 - Support Multiple Datasets
 - Support default fonts, fontSize, fontcolor
 - Support More Chart Types
-- Refine PropTypes
 - Support custom formatting for callback functions
+- Refine PropTypes (?)
 - Better organize options prop (?)
